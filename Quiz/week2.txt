@@ -1,0 +1,30 @@
+1) Which two of the following statements capture the main purposes of the Service class?
+	To support long-running, in the background operations.
+	To enable remote (inter-process) operations.
+
+2) Ignoring the initial xml declaration, what is the outermost xml tag used in the AndroidManifest.xml file?
+	manifest
+
+3) How would you specify a string called "exit_message" whose value is "Goodbye", within a strings.xml file?
+	<string name="exit_message">Goodbye</string>
+
+4) (True or False) One of the main jobs of the Activity class is to support concurrent access to shared, inter-application data.
+	False
+
+5) The example applications for this lecture contain Activities that call setContentView(), passing in a resource ID. Which one of the following statements correctly reflects what the setContentView() method does?
+	It processes the underlying resource file to create Java Objects corresponding to the elements specified in the resource file.
+
+6) Suppose that your application has brought ActivityA into the foreground. The user then presses a button shown by ActivityA, which causes ActivityB to be brought into the foreground, ready for user interaction. At this point, what was most likely the last lifecycle method called on ActivityA and on ActivityB?
+	ActivityA.onStop() and ActivityB.onResume()
+
+7) Suppose you write an Activity that edits some persistent user information such as the user's account name, but does not save it immediately. This important data must be saved before the application exits. In which lifecycle method should you normally save the data?
+	onPause()
+
+8) Suppose you attach an OnClickListener to a Button in your Activity. When will this Object's onClick() method be called?
+	When the user presses and releases the Button in quick succession .
+
+9) One example of a configuration change, is when the user changes the device's global font size. If you want to handle this configuration change manually, what value would you add to a android:configChanges attribute in the application's AndroidManifest.xml file? See: http://developer.android.com/guide/topics/manifest/activity-element.html for more information.
+	 fontScale 
+
+10) Unless you have a strong reason for doing so, you should generally avoid handling configuration changes manually. Which one of the following statements best explains why?
+	It can be difficult to know and capture each configuration change that might occur.
