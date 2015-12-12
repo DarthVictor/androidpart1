@@ -1,6 +1,7 @@
 package course.labs.activitylab;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -56,6 +57,8 @@ public class ActivityOne extends Activity {
         mTvResume = (TextView) findViewById(R.id.resume);
         mTvRestart = (TextView) findViewById(R.id.restart);
 
+
+        final Context context = this;
         Button launchActivityTwoButton = (Button) findViewById(R.id.bLaunchActivityTwo);
         launchActivityTwoButton.setOnClickListener(new OnClickListener() {
 
@@ -67,10 +70,10 @@ public class ActivityOne extends Activity {
 
                 // Create an intent stating which Activity you would like to
                 // start
-                Intent intent = null;
+                Intent intent = new Intent(context, ActivityTwo.class);
 
                 // Launch the Activity using the intent
-
+                startActivity(intent);
             }
         });
 
