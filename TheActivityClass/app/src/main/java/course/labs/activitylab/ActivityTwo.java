@@ -28,9 +28,9 @@ public class ActivityTwo extends Activity {
 	// to count calls to onCreate(), onRestart(), onStart() and
 	// onResume(). These variables should not be defined as static.
 	private int mCreate = 0;
-	private int mRestart = 0;
 	private int mStart = 0;
 	private int mResume = 0;
+	private int mRestart = 0;
 
 	// You will need to increment these variables' values when their
 	// corresponding lifecycle methods get called.
@@ -75,16 +75,13 @@ public class ActivityTwo extends Activity {
 
 		// Has previous state been saved?
 		if (savedInstanceState != null) {
-
 			// TODO:
 			// Restore value of counters from saved state
 			// Only need 4 lines of code, one for every count variable
-
-
-			
-			
-			
-			
+			mCreate = savedInstanceState.getInt("mCreate");
+			mStart = savedInstanceState.getInt("mStart");
+			mResume = savedInstanceState.getInt("mResume");
+			mRestart = savedInstanceState.getInt("mRestart");
 		}
 
 		// Emit LogCat message
@@ -113,8 +110,6 @@ public class ActivityTwo extends Activity {
 		// Update the user interface
 		mStart += 1;
 		displayCounts();
-		
-		
 	}
 
 	@Override
@@ -129,8 +124,6 @@ public class ActivityTwo extends Activity {
 		// Update the user interface
 		mResume += 1;
 		displayCounts();
-
-	
 	}
 
 	@Override
@@ -161,9 +154,6 @@ public class ActivityTwo extends Activity {
 		// Update the user interface
 		mRestart += 1;
 		displayCounts();
-
-	
-	
 	}
 
 	@Override
@@ -176,17 +166,13 @@ public class ActivityTwo extends Activity {
 
 	@Override
 	public void onSaveInstanceState(Bundle savedInstanceState) {
-
 		// TODO:
 		// Save counter state information with a collection of key-value pairs
 		// 4 lines of code, one for every count variable
-
-
-
-		
-		
-		
-		
+		savedInstanceState.putInt("mCreate", mCreate);
+		savedInstanceState.putInt("mStart", mStart);
+		savedInstanceState.putInt("mResume", mResume);
+		savedInstanceState.putInt("mRestart", mRestart);
 	}
 
 	// Updates the displayed counters
