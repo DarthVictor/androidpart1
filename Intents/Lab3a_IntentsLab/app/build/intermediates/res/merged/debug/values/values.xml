@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Victor/Documents/Android/androidpart1/Intents/Lab3a_IntentsLab/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Users/DarthVictor/Documents/Android/androidpart1/Intents/Lab3a_IntentsLab/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">IntentsLab</string>
     <string name="enter_string">Enter</string>
@@ -11,7 +11,7 @@
     <string name="no_text_entered">No Text Entered</string>
     <string name="title_explicit">Explicit Activation</string>
     <string name="title_main">Activity Loader Activity</string>
-    <!-- From: file:/C:/Users/Victor/Documents/Android/androidpart1/Intents/Lab3a_IntentsLab/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/Users/DarthVictor/Documents/Android/androidpart1/Intents/Lab3a_IntentsLab/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

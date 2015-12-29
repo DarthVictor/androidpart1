@@ -30,4 +30,4 @@
         android:layout_below="@+id/editText"
         android:text="@string/enter_string" />
 
-</RelativeLayout><!-- From: file:/C:/Users/Victor/Documents/Android/androidpart1/Intents/Lab3a_IntentsLab/app/src/main/res/layout/explicitly_loaded_activity.xml -->
+</RelativeLayout><!-- From: file:/D:/Users/DarthVictor/Documents/Android/androidpart1/Intents/Lab3a_IntentsLab/app/src/main/res/layout/explicitly_loaded_activity.xml -->
